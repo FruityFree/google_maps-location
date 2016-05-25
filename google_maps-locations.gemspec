@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'google_maps/locations/version'
+require 'google_maps/location/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "google_maps-locations"
-  spec.version       = GoogleMaps::Locations::VERSION
+  spec.name          = "google_maps-location"
+  spec.version       = GoogleMaps::Location::VERSION
   spec.authors       = ["kirill.fedyanin"]
   spec.email         = ["kirill.fedyanin@gmail.com"]
 
   spec.summary       = %q{Wrapper to use google maps locations api}
-  spec.homepage      = "https://github.com/FruityFree/google_maps-locations"
+  spec.homepage      = "https://github.com/FruityFree/google_maps-location"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

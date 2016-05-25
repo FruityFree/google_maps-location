@@ -5,7 +5,8 @@ class GoogleMaps::LocationsTest < Minitest::Test
     refute_nil ::GoogleMaps::Locations::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_that_it_returns_string
+    id = GoogleMaps::Locations.id_by_name(name)
+    assert_instance_of String, id
   end
 end
