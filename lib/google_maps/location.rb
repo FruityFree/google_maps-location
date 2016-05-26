@@ -6,4 +6,11 @@ module GoogleMaps
       "hello"
     end
   end
+
+  class Config
+    CONFIG_FILE="config/application.yml"
+    def self.google_key
+      @google_key ||= YAML.load(File.read(CONFIG_FILE))["GOOGLE_API_KEY"]
+    end
+  end
 end
